@@ -29,16 +29,16 @@ private val LightColorPalette = lightColors(
 
 @Composable
 fun JetProfileTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
-    val colors = if (darkTheme) {
-        DarkColorPalette
-    } else {
-        LightColorPalette
-    }
+  val colors = if (darkTheme) {
+    DarkColorPalette
+  } else {
+    LightColorPalette
+  }
 
-    MaterialTheme(
-        colors = colors,
-        typography = Typography,
-        shapes = Shapes,
-        content = content
-    )
+  MaterialTheme(
+      colors = colors,
+      typography = Typography,
+      shapes = Shapes,
+      content = content
+  )
 }
